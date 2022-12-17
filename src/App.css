@@ -21,6 +21,10 @@ header > img {
   width: 220px;
 }
 
+.cover::-webkit-scrollbar {
+  display: none;
+}
+
 covers {
   height: 120px;
   display: flex;

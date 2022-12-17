@@ -6,7 +6,9 @@ const Section = (props) => {
       <h1>{props.category}</h1>
       <covers>
         {props.pictures.map((element, index) => {
-          return <img className="cover" src={element} alt="cover" />;
+          return (
+            <img index={index} className="cover" src={element} alt="cover" />
+          );
         })}
       </covers>
     </>
