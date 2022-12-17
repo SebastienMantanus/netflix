@@ -1,5 +1,5 @@
 import "./App.css";
-import Movies from "./movies_rnexgr.json";
+import movies from "./movies_rnexgr.json";
 // import Section from "./components/Section";
 import logo from "../src/logo_netflix.png";
 import Section from "./components/Section";
@@ -10,8 +10,8 @@ function App() {
       <header>
         <img alt="logo" src={logo} />
       </header>
-      <section>
-        {Movies.map((element, index) => {
+      <main>
+        {movies.map((element, index) => {
           // console.log(element.category);
           return (
             <Section
@@ -21,7 +21,7 @@ function App() {
             />
           );
         })}
-      </section>
+      </main>
     </div>
   );
 }

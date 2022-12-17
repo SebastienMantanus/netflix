@@ -17,15 +17,11 @@ header > img {
   width: 100px;
 }
 
-.cover {
-  width: 220px;
-}
-
-.cover::-webkit-scrollbar {
+.covers::-webkit-scrollbar {
   display: none;
 }
 
-covers {
+.covers {
   height: 120px;
   display: flex;
   overflow: hidden;
@@ -34,6 +30,7 @@ covers {
   scrollbar-width: none;
 }
 
-covers > img {
+.covers > img {
   object-fit: cover;
+  width: 220px;
 }

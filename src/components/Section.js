@@ -4,13 +4,11 @@ const Section = (props) => {
   return (
     <>
       <h1>{props.category}</h1>
-      <covers>
+      <div className="covers">
         {props.pictures.map((element, index) => {
-          return (
-            <img index={index} className="cover" src={element} alt="cover" />
-          );
+          return <img index={index} src={element} alt="cover" />;
         })}
-      </covers>
+      </div>
     </>
   );
 };
