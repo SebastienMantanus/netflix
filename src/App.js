@@ -10,18 +10,18 @@ function App() {
       <header>
         <img alt="logo" src={logo} />
       </header>
-      {Movies.map((element, index) => {
-        // console.log(element.category);
-        return (
-          <Section
-            key={index}
-            category={element.category}
-            pictures={Movies.images.map((element, index) => {
-              console.log(element.images);
-            })}
-          />
-        );
-      })}
+      <section>
+        {Movies.map((element, index) => {
+          // console.log(element.category);
+          return (
+            <Section
+              key={index}
+              category={element.category}
+              pictures={element.images}
+            />
+          );
+        })}
+      </section>
     </div>
   );
 }

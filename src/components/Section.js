@@ -1,7 +1,16 @@
 // import Movies from "../movies_rnexgr.json";
 
 const Section = (props) => {
-  return <h1>{props.category}</h1>;
+  return (
+    <>
+      <h1>{props.category}</h1>
+      <covers>
+        {props.pictures.map((element, index) => {
+          return <img className="cover" src={element} alt="cover" />;
+        })}
+      </covers>
+    </>
+  );
 };
 
 export default Section;
